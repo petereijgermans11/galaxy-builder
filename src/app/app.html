@@ -1,0 +1,11 @@
+<div class="app-container">
+  <div class="viewer-section">
+    <app-viewer-3d />
+  </div>
+
+  <div class="control-section">
+    <app-command-input (commandSubmitted)="handleCommand($event)" />
+  </div>
+</div>
+
+<router-outlet />

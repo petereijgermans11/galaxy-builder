@@ -1,0 +1,36 @@
+:host {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial,
+    sans-serif;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.app-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  gap: 0;
+}
+
+.viewer-section {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.control-section {
+  padding: 1.5rem;
+  background: rgba(15, 15, 30, 0.8);
+  backdrop-filter: blur(20px);
+  border-top: 1px solid rgba(0, 255, 136, 0.2);
+}
+
+@media (max-width: 768px) {
+  .control-section {
+    padding: 1rem;
+  }
+}
